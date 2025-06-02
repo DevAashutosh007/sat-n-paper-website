@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import { ChevronDown, ChevronUp } from "lucide-react";
+import Accordion from "./Accordion";
 
 const faqs = [
   {
@@ -11,19 +11,23 @@ const faqs = [
   },
   {
     question: "How personalized is the learning experience?",
-    answer: "We start with a free consultation to understand your child’s academic goals, learning style, and timeline. Based on that, our team recommends a tailored program that fits their needs — whether it's SAT, ACT, or a focused skill-building track.",
+    answer:
+      "We start with a free consultation to understand your child’s academic goals, learning style, and timeline. Based on that, our team recommends a tailored program that fits their needs — whether it's SAT, ACT, or a focused skill-building track.",
   },
   {
     question: "Are the mentors and tutors experienced?",
-    answer: "We start with a free consultation to understand your child’s academic goals, learning style, and timeline. Based on that, our team recommends a tailored program that fits their needs — whether it's SAT, ACT, or a focused skill-building track.",
+    answer:
+      "We start with a free consultation to understand your child’s academic goals, learning style, and timeline. Based on that, our team recommends a tailored program that fits their needs — whether it's SAT, ACT, or a focused skill-building track.",
   },
   {
     question: "Can I track my child’s progress?",
-    answer: "We start with a free consultation to understand your child’s academic goals, learning style, and timeline. Based on that, our team recommends a tailored program that fits their needs — whether it's SAT, ACT, or a focused skill-building track.",
+    answer:
+      "We start with a free consultation to understand your child’s academic goals, learning style, and timeline. Based on that, our team recommends a tailored program that fits their needs — whether it's SAT, ACT, or a focused skill-building track.",
   },
   {
     question: "What resources are available for additional support?",
-    answer: "We start with a free consultation to understand your child’s academic goals, learning style, and timeline. Based on that, our team recommends a tailored program that fits their needs — whether it's SAT, ACT, or a focused skill-building track.",
+    answer:
+      "We start with a free consultation to understand your child’s academic goals, learning style, and timeline. Based on that, our team recommends a tailored program that fits their needs — whether it's SAT, ACT, or a focused skill-building track.",
   },
 ];
 
@@ -35,49 +39,33 @@ const QuickAnswer: React.FC = () => {
   };
 
   return (
-    <section className="max-w-screen-xl mx-auto px-6 py-12 flex flex-col lg:flex-row justify-between gap-12">
+    <section className="max-w-screen-xl mx-auto px-4 sm:px-6 py-8 sm:py-12 flex flex-col lg:flex-row justify-between gap-10 sm:gap-12">
       {/* Left Section */}
-      <div className="max-w-md space-y-6">
-        <div className="space-y-1">
-          <h2 className="text-5xl font-semibold text-zinc-500 font-poppins leading-tight">
+      <div className="w-full lg:max-w-md space-y-5 sm:space-y-6">
+        <div className="space-y-2">
+          <h2 className="text-3xl sm:text-5xl font-semibold text-zinc-500 font-poppins leading-snug sm:leading-tight">
             Quick Answers
           </h2>
-          <p className="text-xl text-neutral-500 font-poppins leading-7 tracking-tight">
+          <p className="text-base sm:text-xl text-neutral-500 font-poppins leading-relaxed tracking-tight">
             We’ve answered the most common ones below. Still unsure? Feel free
             to connect with us — we’re here to help.
           </p>
         </div>
-        <button className="px-6 py-3 bg-zinc-500 rounded-xl text-white text-base font-medium font-poppins">
+        <button className="px-5 sm:px-6 py-3 bg-zinc-500 rounded-xl text-white text-sm sm:text-base font-medium font-poppins">
           Let’s Connect
         </button>
       </div>
 
       {/* Right Section (FAQs) */}
-      <div className="flex flex-col gap-4 w-full lg:w-[60%]">
+      <div className="w-full flex flex-col gap-4 lg:w-[60%]">
         {faqs.map((faq, index) => (
-          <div
+          <Accordion
             key={index}
-            className="bg-neutral-50 rounded-lg shadow-md px-6 py-4"
-          >
-            <button
-              className="w-full flex justify-between items-center text-left"
-              onClick={() => toggleIndex(index)}
-            >
-              <span className="text-2xl text-neutral-500 font-medium font-poppins leading-loose tracking-wide">
-                {faq.question}
-              </span>
-              {openIndex === index ? (
-                <ChevronUp className="w-6 h-6 text-neutral-500" />
-              ) : (
-                <ChevronDown className="w-6 h-6 text-neutral-500" />
-              )}
-            </button>
-            {openIndex === index && faq.answer && (
-              <p className="mt-2 text-neutral-500 text-lg leading-7 tracking-tight font-poppins">
-                {faq.answer}
-              </p>
-            )}
-          </div>
+            label={faq.question}
+            value={faq.answer}
+            isOpen={openIndex === index}
+            onToggle={() => toggleIndex(index)}
+          />
         ))}
       </div>
     </section>
