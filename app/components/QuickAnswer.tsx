@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import Accordion from "@/components/Accordion";
+import CommonButton from "./CommonButton";
 
 const faqs = [
   {
@@ -51,9 +52,11 @@ const QuickAnswer: React.FC = () => {
             to connect with us — we’re here to help.
           </p>
         </div>
-        <button className="px-5 sm:px-6 py-3 bg-zinc-500 rounded-xl text-white text-sm sm:text-base font-medium font-poppins">
+              <CommonButton variant="secondary">Let's Connect</CommonButton>
+
+        {/* <button className="px-5 sm:px-6 py-3 bg-zinc-500 rounded-xl text-white text-sm sm:text-base font-medium font-poppins">
           Let’s Connect
-        </button>
+        </button> */}
       </div>
 
       {/* Right Section (FAQs) */}

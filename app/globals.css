@@ -9,7 +9,7 @@
   --color-border: #e5e7eb;
   --color-muted: #f9fafb;
   --color-background: #ffffff;
-  --color-foreground: #0f172a;
+  --color-foreground: #ffffff;
 
   /* Font families */
   --font-sans: var(--font-geist-sans, 'Poppins', sans-serif);
@@ -32,11 +32,11 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --color-primary: #60a5fa;
-    --color-primary-foreground: #000000;
+    --color-primary-foreground: #ffffff;
     --color-secondary: #cbd5e1;
     --color-border: #334155;
     --color-muted: #1e293b;
-    --color-background: #0a0a0a;
+    --color-background: #ffffff;
     --color-foreground: #f1f5f9;
   }
 }

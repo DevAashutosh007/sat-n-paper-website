@@ -1,4 +1,5 @@
 import React from "react";
+import CommonButton from "./CommonButton";
 
 const CourseProgram = () => {
   return (
@@ -158,9 +159,10 @@ const CourseProgram = () => {
               </div>
             </div>
             <div className="self-stretch px-6 py-3 bg-white rounded-xl outline  outline-offset-[-1px] outline-zinc-500 inline-flex justify-center items-center gap-2.5">
-              <div className="justify-start text-neutral-500 text-base font-medium font-['Poppins'] leading-snug tracking-tight">
+              <CommonButton variant="secondary">Let's Connect</CommonButton>
+              {/* <div className="justify-start text-neutral-500 text-base font-medium font-['Poppins'] leading-snug tracking-tight">
                 Let’s Connect
-              </div>
+              </div> */}
             </div>
           </div>
           <div className="self-stretch py-2 flex flex-col justify-start items-start gap-2">

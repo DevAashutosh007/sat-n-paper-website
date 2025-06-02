@@ -23,7 +23,7 @@ const CommonButton: React.FC<CommonButtonProps> = ({
 }) => {
   if (variant === "tertiary") {
     const tertiaryClass =
-      "text-neutral-500 text-base font-medium font-poppins leading-snug tracking-tight";
+      "bg-zinc-500 text-[#6D6D6D] border border-[#8A8A8A] px-6 py-3 rounded-xl font-medium font-poppins transition duration-200 ease-in-out";
     return (
       <button
         className={`${tertiaryClass} ${className}`.trim()}
