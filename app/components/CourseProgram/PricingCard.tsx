@@ -1,23 +1,21 @@
-const PricingCard = () => {
-  const features = [
-    "25–35 hrs 1:1 mentoring",
-    "10–15 hrs group classes",
-    "Expert tutoring in Math, Reading & Writing by 3 specialists",
-    "Complete study material",
-    "18 sectional + 18 full mock tests",
-    "3 live proctored mocks",
-    "Test reviews & discussion sessions",
-    "Prep Manager support",
-    "Min. 2 Parent-Tutor meetings",
-  ];
-
+const PricingCard = ({
+  pricing,
+}: {
+  pricing: {
+    original: number;
+    discounted: number;
+    discountText: string;
+    features: string[];
+  };
+}) => {
+  const { original, discounted, discountText, features } = pricing;
   return (
     <div className="border border-zinc-300 p-6 rounded-lg space-y-6">
       <div>
-        <h3 className="text-2xl font-semibold text-neutral-500">₹ 2,80,000</h3>
+        <h3 className="text-2xl font-semibold text-neutral-500">₹ {discounted}</h3>
         <div className="flex gap-4 items-center">
-          <span className="line-through text-xl text-zinc-500">₹ 3,00,000</span>
-          <span className="text-xl font-semibold text-zinc-500">20% Off</span>
+          <span className="line-through text-xl text-zinc-500">₹ {original}</span>
+          <span className="text-xl font-semibold text-zinc-500">{discountText}</span>
         </div>
         <button className="mt-4 w-full bg-zinc-500 text-white py-3 rounded-xl font-medium">
           Enrol Now

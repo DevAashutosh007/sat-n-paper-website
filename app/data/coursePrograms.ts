@@ -1,0 +1,79 @@
+// data/coursePrograms.ts
+export const coursePrograms = [
+  {
+    id: "sat",
+    slug: "sat-course-program",
+    title: "SAT Course Program",
+    image: "/images/sat.jpg",
+    subtitle: "Unlock your full potential with our structured SAT program.",
+    overview: `Welcome to our comprehensive SAT Exam Online Course!...\n\nOur experienced instructors will guide you...`,
+    infoGrid: [
+      { label: "Language", value: "Multi Lingual" },
+      { label: "Mode", value: "Online" },
+      { label: "Students", value: "10,000+" },
+      { label: "Experience", value: "20+ years" },
+    ],
+    outcomes: [
+      "Test-Taking Strategies",
+      "Reading Comprehension",
+      "Grammar and Writing Skills",
+      "Algebra and Advanced Math",
+      "Personalized Practice and Feedback",
+      "Stress Management and Confidence Building",
+    ],
+    results: [
+      "Score improvement by 150+ points",
+      "Higher acceptance rate in Ivy Leagues",
+      "Confidence in time management",
+    ],
+    pricing: {
+      original: 300000,
+      discounted: 280000,
+      discountText: "20% Off",
+      features: [
+        "25–35 hrs 1:1 mentoring",
+        "10–15 hrs group classes",
+        "Expert tutoring in Math, Reading & Writing",
+        "Complete study material",
+        "18 sectional + 18 full mock tests",
+        "3 live proctored mocks",
+        "Test reviews & discussion sessions",
+        "Prep Manager support",
+        "Min. 2 Parent-Tutor meetings",
+      ],
+    },
+  },
+  {
+    id: "ielts",
+    slug: "ielts-coaching-program",
+    title: "IELTS Coaching Program",
+    image: "/images/ielts.jpg",
+    subtitle: "Ace the IELTS with our expert-led coaching modules.",
+    overview: "Comprehensive IELTS training tailored to your needs...",
+    infoGrid: [
+      { label: "Language", value: "English" },
+      { label: "Mode", value: "Hybrid" },
+      { label: "Students", value: "5000+" },
+      { label: "Experience", value: "15+ years" },
+    ],
+    outcomes: [
+      "Speaking Fluency",
+      "Listening Accuracy",
+      "Academic Writing",
+      "Reading Analysis",
+    ],
+    results: ["Band 7.5+ guaranteed*", "90% success rate"],
+    pricing: {
+      original: 150000,
+      discounted: 120000,
+      discountText: "Save 20%",
+      features: [
+        "30+ hours of instruction",
+        "Mock tests & feedback",
+        "Band-based personal plans",
+        "Interactive speaking practice",
+      ],
+    },
+  },
+  // add more programs here...
+];
