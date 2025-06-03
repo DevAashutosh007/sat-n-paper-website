@@ -1,8 +1,10 @@
+import TabbedResults from "@/components/TabbedResults";
 import React from "react";
 
 const page = () => {
   return (
     <div>
+      <TabbedResults/>  
       <div className="w-[1440px] h-[1185px] relative bg-white overflow-hidden">
         <div className="w-[1440px] h-20 left-0 top-0 absolute bg-zinc-300"></div>
         <div className="w-[692px] left-[80px] top-[128px] absolute inline-flex flex-col justify-start items-start gap-1">
