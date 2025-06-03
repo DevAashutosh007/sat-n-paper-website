@@ -1,23 +1,24 @@
-import React from 'react';
+import React from "react";
 
-type Props = {
+interface TabsProps {
   tabs: string[];
   activeTab: string;
   onChange: (tab: string) => void;
-};
+}
 
-const Tabs: React.FC<Props> = ({ tabs, activeTab, onChange }) => {
+const Tabs: React.FC<TabsProps> = ({ tabs, activeTab, onChange }) => {
   return (
-    <div className="flex space-x-4 mb-4">
-      {tabs.map(tab => (
+    <div className="flex md:flex-col overflow-x-auto md:overflow-y-auto">
+      {tabs.map((tab) => (
         <button
           key={tab}
           onClick={() => onChange(tab)}
-          className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
-            activeTab === tab
-              ? 'bg-zinc-800 text-white'
-              : 'bg-gray-200 text-gray-600 hover:bg-gray-300'
-          }`}
+          className={`py-2 px-4 whitespace-nowrap text-sm border-b-2 md:border-b-0 md:border-l-4 
+            ${
+              tab === activeTab
+                ? "border-blue-500 text-blue-600 font-semibold"
+                : "border-transparent text-gray-600"
+            }`}
         >
           {tab}
         </button>
