@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { coursePrograms } from "@/app/data/coursePrograms";
+import { coursePrograms } from "@/data/coursePrograms";
 
 const CourseProgramsPage = () => {
   return (

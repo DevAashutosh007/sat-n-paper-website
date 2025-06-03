@@ -1,5 +1,5 @@
 // pages/programs/[slug].tsx
-import { coursePrograms } from "@/app/data/coursePrograms";
+import { coursePrograms } from "@/data/coursePrograms";
 import CourseProgram from "@/components/CourseProgram/CourseProgram";
 
 interface Props {
