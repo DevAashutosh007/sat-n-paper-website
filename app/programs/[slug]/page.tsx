@@ -1,13 +1,13 @@
 // pages/programs/[slug].tsx
-import { useRouter } from "next/router";
-import { coursePrograms } from "@/data/coursePrograms";
+import { coursePrograms } from "@/app/data/coursePrograms";
 import CourseProgram from "@/components/CourseProgram/CourseProgram";
 
-const CourseProgramPage = () => {
-  const { query, isFallback } = useRouter();
-  const { slug } = query;
+interface Props {
+  params: { slug: string };
+}
 
-  if (isFallback) return <p>Loading...</p>;
+const CourseProgramPage = ({ params }: Props) => {
+  const { slug } = params;
 
   const program = coursePrograms.find((item) => item.slug === slug);
 
