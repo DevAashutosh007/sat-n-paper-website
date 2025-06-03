@@ -42,6 +42,16 @@ export const coursePrograms = [
         "Min. 2 Parent-Tutor meetings",
       ],
     },
+
+    enrolled: "2500+",
+    rating: 4.8,
+    highlights: [
+      "One-on-one & group sessions",
+      "Full curriculum, mocks & review",
+    ],
+    bestFor: "3–6 months Preparation",
+    price: 280000,
+    priceNote: "plus GST",
   },
   {
     id: "ielts",
@@ -74,6 +84,15 @@ export const coursePrograms = [
         "Interactive speaking practice",
       ],
     },
+    enrolled: "2500+",
+    rating: 4.8,
+    highlights: [
+      "One-on-one & group sessions",
+      "Full curriculum, mocks & review",
+    ],
+    bestFor: "3–6 months Preparation",
+    price: 280000,
+    priceNote: "plus GST",
   },
   // add more programs here...
 ];
