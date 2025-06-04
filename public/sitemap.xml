@@ -1,96 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <!-- Static Pages -->
   <url>
-    <loc>https://zupians.com/privacy-policy</loc>
-    <lastmod>2024-11-19</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://zupians.com/terms-of-service</loc>
-    <lastmod>2024-11-19</lastmod>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Sidebar Pages -->
-  <url>
-    <loc>https://zupians.com/dashboard</loc>
-    <lastmod>2024-12-01</lastmod>
+    <loc>https://satnpaper.com/</loc>
+    <lastmod>2024-11-25T07:34:19+00:00</lastmod>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://zupians.com/attendance</loc>
-    <lastmod>2024-12-01</lastmod>
+    <loc>https://satnpaper.com/about/</loc>
+    <lastmod>2023-08-02T14:56:24+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://satnpaper.com/our-results/</loc>
+    <lastmod>2025-05-22T03:46:16+00:00</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://zupians.com/payroll</loc>
-    <lastmod>2024-12-01</lastmod>
+    <loc>https://satnpaper.com/contact/</loc>
+    <lastmod>2025-05-22T05:57:24+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://satnpaper.com/our-reach/</loc>
+    <lastmod>2023-08-02T14:57:28+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://satnpaper.com/privacy-policy/</loc>
+    <lastmod>2020-04-06T17:31:41+00:00</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://satnpaper.com/terms-of-service/</loc>
+    <lastmod>2020-04-06T17:24:21+00:00</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://satnpaper.com/refund-policy/</loc>
+    <lastmod>2024-11-25T07:26:24+00:00</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://satnpaper.com/pricing/</loc>
+    <lastmod>2025-03-16T12:55:28+00:00</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://zupians.com/slots</loc>
-    <lastmod>2024-12-01</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://zupians.com/hr-policies</loc>
-    <lastmod>2024-12-01</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://zupians.com/recruitments</loc>
-    <lastmod>2024-12-01</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://zupians.com/hr-operations</loc>
-    <lastmod>2024-12-01</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://zupians.com/hr-operations/bonuses-awards</loc>
-    <lastmod>2024-12-01</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://zupians.com/hr-operations/promotions</loc>
-    <lastmod>2024-12-01</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://zupians.com/hr-operations/resignations</loc>
-    <lastmod>2024-12-01</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://zupians.com/calendar</loc>
-    <lastmod>2024-12-01</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://zupians.com/meetings</loc>
-    <lastmod>2024-12-01</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://zupians.com/training-development</loc>
-    <lastmod>2024-12-01</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://zupians.com/team-space</loc>
-    <lastmod>2024-12-01</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://zupians.com/workflows</loc>
-    <lastmod>2024-12-01</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://zupians.com/settings/user-management</loc>
-    <lastmod>2024-12-01</lastmod>
-    <priority>0.7</priority>
+    <loc>https://satnpaper.com/careers/</loc>
+    <lastmod>2022-11-18T13:10:11+00:00</lastmod>
+    <priority>0.6</priority>
   </url>
 </urlset>
