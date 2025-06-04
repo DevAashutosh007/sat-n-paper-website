@@ -7,9 +7,9 @@ import companyLogo from "@/assets/images/sat-n-paper-logo.webp";
 
 const menuItems = [
   { label: "Home", href: "/" },
-  { label: "About Us", href: "/about" },
+  { label: "Programs", href: "/about" },
   {
-    label: "Courses",
+    label: "Results",
     submenu: [
       { label: "JEE Coaching", href: "/courses/jee" },
       { label: "NEET Coaching", href: "/courses/neet" },
@@ -17,15 +17,13 @@ const menuItems = [
     ],
   },
   {
-    label: "Programs",
+    label: "How It Works",
     submenu: [
       { label: "Online Programs", href: "/programs/online" },
       { label: "Offline Programs", href: "/programs/offline" },
     ],
   },
-  { label: "Results", href: "/results" },
-  { label: "Fees", href: "/fees" },
-  { label: "Blog", href: "/blog" },
+  { label: "About us", href: "/About us" },
 ];
 
 const Header = () => {
@@ -49,26 +47,37 @@ const Header = () => {
               {!item.submenu ? (
                 <Link
                   href={item.href}
-                   className="text-sm font-medium text-link hover:text-link-hover"
+                  className="text-sm font-medium text-link hover:text-link-hover"
                 >
                   {item.label}
                 </Link>
               ) : (
                 <>
-                  <button className="flex items-center text-sm font-medium hover:text-primary">
-                    {item.label}
-                    <ChevronDown className="ml-1 h-4 w-4" />
-                  </button>
-                  <div className="absolute hidden group-hover:block bg-background border border-border mt-2 rounded-lg shadow-lg min-w-[200px]">
-                    {item.submenu.map((sub) => (
-                      <Link
-                        key={sub.label}
-                        href={sub.href}
-                        className="block px-4 py-2 text-sm hover:bg-muted hover:text-primary"
-                      >
-                        {sub.label}
-                      </Link>
-                    ))}
+                  <div key={item.label} className="relative group">
+                    <button className="flex items-center text-sm font-medium text-gray-700 hover:text-black">
+                      {item.label}
+                      <ChevronDown className="ml-1 h-4 w-4 transform transition-transform duration-200 group-hover:rotate-180" />
+                    </button>
+
+                    {/* Submenu */}
+                    <div
+                      className="absolute left-1/2 -translate-x-1/2 top-full mt-3 z-50 
+                opacity-0 invisible group-hover:visible group-hover:opacity-100
+                transition-all duration-200
+                bg-white rounded-lg shadow-xl min-w-[200px]
+                before:content-[''] before:absolute before:top-[-8px] before:left-1/2 before:-translate-x-1/2
+                before:border-8 before:border-transparent before:border-b-white before:z-[-1]"
+                    >
+                      {item.submenu.map((sub) => (
+                        <Link
+                          key={sub.label}
+                          href={sub.href}
+                          className="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-100 hover:text-black"
+                        >
+                          {sub.label}
+                        </Link>
+                      ))}
+                    </div>
                   </div>
                 </>
               )}
