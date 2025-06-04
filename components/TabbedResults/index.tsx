@@ -11,7 +11,8 @@ const TabbedResults = () => {
     <div className="px-4 py-8 w-full max-w-screen-xl mx-auto">
       {/* Header */}
       <div className="mb-6">
-        <h2 className="text-4xl font-semibold text-zinc-700">AP Results</h2>
+        {/* Use custom color class from Tailwind config */}
+        <h2 className="text-4xl font-semibold text-primaryHeader">AP Results</h2>  
         <p className="text-gray-500 text-lg">
           Unlock your full potential with our structured SAT program.
         </p>
@@ -40,5 +41,6 @@ const TabbedResults = () => {
     </div>
   );
 };
+
 
 export default TabbedResults;

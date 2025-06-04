@@ -4,7 +4,7 @@ const RefundPolicyPage = () => {
   return (
     <div className="p-10 bg-gray-100 text-gray-800 font-sans leading-relaxed">
       <header className="text-center mb-5">
-        <h1 className="text-4xl font-bold m-0">Refund Policy</h1>
+        <h1 className="text-4xl font-bold m-0 text-primary">Refund Policy</h1>
         <p className="text-base text-gray-600">Last Updated: 4 June 2025</p>
       </header>
 
@@ -45,5 +45,6 @@ const RefundPolicyPage = () => {
     </div>
   );
 };
+
 
 export default RefundPolicyPage;

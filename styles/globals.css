@@ -1,0 +1,160 @@
+@import "tailwindcss";
+
+/* Root theme tokens (light mode by default) */
+:root {
+  /* Brand Colors */
+  /* --color-primary: #2563eb;
+  --color-primary-foreground: #ffffff; */
+
+  --color-secondary: #64748b;
+  --color-secondary-foreground: #ffffff;
+
+  --color-destructive: #dc2626;
+  --color-destructive-foreground: #ffffff;
+
+  --color-muted: #f9fafb;
+  --color-muted-foreground: #475569;
+
+  --color-accent: #f1f5f9;
+  --color-accent-foreground: #1e293b;
+
+  --color-border: #e5e7eb;
+  --color-input: #f1f5f9;
+
+  --color-background: #ffffff;
+  --color-foreground: #0f172a;
+
+  /* Header Link Colors */
+  --color-link: #1f2937; /* Default text */
+  --color-link-hover: #0d9488; /* On hover */
+
+  /* CTA Button Colors */
+  --color-primary: #0d9488; /* CTA bg */
+  --color-primary-foreground: #ffffff; /* CTA text */
+
+
+  /* Font families */
+  --font-sans: var(--font-geist-sans, "Poppins", sans-serif);
+  --font-mono: var(--font-geist-mono, monospace);
+
+  /* Border radius */
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 8px;
+
+  /* Spacing scale */
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+}
+
+/* Base styles */
+body {
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-sans);
+}
+
+/* Background colors */
+.bg-primary {
+  background-color: var(--color-primary);
+}
+.bg-secondary {
+  background-color: var(--color-secondary);
+}
+.bg-destructive {
+  background-color: var(--color-destructive);
+}
+.bg-muted {
+  background-color: var(--color-muted);
+}
+.bg-accent {
+  background-color: var(--color-accent);
+}
+.bg-background {
+  background-color: var(--color-background);
+}
+
+/* Text colors */
+.text-primary {
+  color: var(--color-primary);
+}
+.text-primary-foreground {
+  color: var(--color-primary-foreground) !important;
+}
+.text-secondary {
+  color: var(--color-secondary);
+}
+.text-secondary-foreground {
+  color: var(--color-secondary-foreground);
+}
+.text-destructive {
+  color: var(--color-destructive);
+}
+.text-destructive-foreground {
+  color: var(--color-destructive-foreground);
+}
+.text-muted {
+  color: var(--color-muted);
+}
+.text-muted-foreground {
+  color: var(--color-muted-foreground);
+}
+.text-accent {
+  color: var(--color-accent);
+}
+.text-accent-foreground {
+  color: var(--color-accent-foreground);
+}
+.text-foreground {
+  color: var(--color-foreground);
+}
+.text-link {
+  color: var(--color-link);
+}
+.text-link-hover:hover {
+  color: var(--color-link-hover);
+}
+
+/* Border colors */
+.border-primary {
+  border-color: var(--color-primary);
+}
+.border-secondary {
+  border-color: var(--color-secondary);
+}
+.border-destructive {
+  border-color: var(--color-destructive);
+}
+.border-muted {
+  border-color: var(--color-muted);
+}
+.border-accent {
+  border-color: var(--color-accent);
+}
+.border-border {
+  border-color: var(--color-border);
+}
+
+/* Background hover variants (add more as needed) */
+.hover\:bg-primary:hover {
+  background-color: var(--color-primary);
+}
+.hover\:bg-secondary:hover {
+  background-color: var(--color-secondary);
+}
+
+/* Text hover variants */
+.hover\:text-link-hover:hover {
+  color: var(--color-link-hover);
+}
+
+/* Inputs */
+.bg-input {
+  background-color: var(--color-input);
+}
+.border-input {
+  border-color: var(--color-input);
+}

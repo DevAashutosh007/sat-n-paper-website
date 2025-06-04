@@ -33,13 +33,13 @@ const Accordion: React.FC<AccordionProps> = ({
         className="w-full flex justify-between items-center text-left"
         onClick={onToggle}
       >
-        <span className="text-lg sm:text-2xl text-neutral-500 font-medium font-poppins leading-snug tracking-wide">
+        <span className="text-lg sm:text-2xl text-header-primary font-medium font-poppins leading-snug tracking-wide">
           {label}
         </span>
         {isOpen ? (
-          <ChevronUp className="w-5 h-5 sm:w-6 sm:h-6 text-neutral-500" />
+          <ChevronUp className="w-5 h-5 sm:w-6 sm:h-6 text-header-primary" />
         ) : (
-          <ChevronDown className="w-5 h-5 sm:w-6 sm:h-6 text-neutral-500" />
+          <ChevronDown className="w-5 h-5 sm:w-6 sm:h-6 text-header-primary" />
         )}
       </button>
 
@@ -51,7 +51,7 @@ const Accordion: React.FC<AccordionProps> = ({
           overflow: "hidden",
         }}
       >
-        <p className="mt-2 text-sm sm:text-lg text-neutral-500 leading-6 sm:leading-7 tracking-tight font-poppins">
+        <p className="mt-2 text-sm sm:text-lg text-header-primary leading-6 sm:leading-7 tracking-tight font-poppins">
           {value}
         </p>
       </div>

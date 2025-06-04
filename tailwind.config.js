@@ -3,23 +3,16 @@ module.exports = {
   content: ["./**/*.{js,ts,jsx,tsx,mdx}"],
   theme: {
     extend: {
-        animation: {
-        'fade-in': 'fadeIn 0.2s ease-out',
+      animation: {
+        "fade-in": "fadeIn 0.2s ease-out",
       },
-       keyframes: {
+      keyframes: {
         fadeIn: {
-          '0%': { opacity: 0 },
-          '100%': { opacity: 1 },
+          "0%": { opacity: 0 },
+          "100%": { opacity: 1 },
         },
       },
-      colors: {
-        primary: "var(--color-primary)",
-        secondary: "var(--color-secondary)",
-        border: "var(--color-border)",
-        muted: "var(--color-muted)",
-        background: "var(--color-background)",
-        foreground: "var(--color-foreground)",
-      },
+      
       fontFamily: {
         sans: ["var(--font-poppins)", "sans-serif"],
         geist: ["var(--font-geist-sans)", "sans-serif"],

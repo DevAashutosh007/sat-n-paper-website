@@ -16,8 +16,8 @@ const Tabs: React.FC<TabsProps> = ({ tabs, activeTab, onChange }) => {
           className={`py-2 px-4 whitespace-nowrap text-sm border-b-2 md:border-b-0 md:border-l-4 
             ${
               tab === activeTab
-                ? "border-blue-500 text-blue-600 font-semibold"
-                : "border-transparent text-gray-600"
+                ? "border-headerBorder text-headerTextActive font-semibold"
+                : "border-transparent text-headerTextInactive"
             }`}
         >
           {tab}
@@ -26,5 +26,6 @@ const Tabs: React.FC<TabsProps> = ({ tabs, activeTab, onChange }) => {
     </div>
   );
 };
+
 
 export default Tabs;

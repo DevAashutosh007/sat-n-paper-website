@@ -33,7 +33,7 @@ const Header = () => {
   const [activeMobileMenu, setActiveMobileMenu] = useState<string | null>(null);
 
   return (
-    <header className="sticky top-0 z-50 bg-white border-b shadow-sm">
+    <header className="sticky top-0 z-50 bg-background border-b border-border shadow-sm">
       <div className="flex items-center justify-between px-4 py-3 md:px-8">
         {/* Logo - Left */}
         <div className="flex-shrink-0">
@@ -49,22 +49,22 @@ const Header = () => {
               {!item.submenu ? (
                 <Link
                   href={item.href}
-                  className="text-sm font-medium text-gray-700 hover:text-black"
+                   className="text-sm font-medium text-link hover:text-link-hover"
                 >
                   {item.label}
                 </Link>
               ) : (
                 <>
-                  <button className="flex items-center text-sm font-medium text-gray-700 hover:text-black">
+                  <button className="flex items-center text-sm font-medium hover:text-primary">
                     {item.label}
                     <ChevronDown className="ml-1 h-4 w-4" />
                   </button>
-                  <div className="absolute hidden group-hover:block bg-white border mt-2 rounded-lg shadow-lg min-w-[200px]">
+                  <div className="absolute hidden group-hover:block bg-background border border-border mt-2 rounded-lg shadow-lg min-w-[200px]">
                     {item.submenu.map((sub) => (
                       <Link
                         key={sub.label}
                         href={sub.href}
-                        className="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-100 hover:text-black"
+                        className="block px-4 py-2 text-sm hover:bg-muted hover:text-primary"
                       >
                         {sub.label}
                       </Link>
@@ -80,13 +80,13 @@ const Header = () => {
         <div className="flex items-center gap-4">
           <Link
             href="/contacts"
-            className="hidden md:inline-flex items-center px-4 py-2 bg-zinc-800 text-white text-sm rounded-lg hover:bg-zinc-700 transition"
+            className="hidden md:inline-flex items-center px-4 py-2 bg-primary text-primary-foreground text-sm rounded-lg hover:opacity-90 transition"
           >
             Get Started
           </Link>
           <button
             onClick={() => setMobileOpen(!mobileOpen)}
-            className="md:hidden inline-flex items-center justify-center p-2 text-gray-600 hover:text-black"
+            className="md:hidden inline-flex items-center justify-center p-2 text-secondary hover:text-primary"
           >
             {mobileOpen ? (
               <X className="w-6 h-6" />
@@ -106,7 +106,7 @@ const Header = () => {
                 {!item.submenu ? (
                   <Link
                     href={item.href}
-                    className="block py-2 text-sm text-gray-700"
+                    className="block py-2 text-sm text-secondary"
                   >
                     {item.label}
                   </Link>
@@ -118,7 +118,7 @@ const Header = () => {
                           activeMobileMenu === item.label ? null : item.label
                         )
                       }
-                      className="flex items-center justify-between w-full py-2 text-sm text-gray-700"
+                      className="flex items-center justify-between w-full py-2 text-sm text-secondary"
                     >
                       {item.label}
                       <ChevronDown
@@ -133,7 +133,7 @@ const Header = () => {
                           <li key={sub.label}>
                             <Link
                               href={sub.href}
-                              className="block py-1 text-sm text-gray-600"
+                              className="block py-1 text-sm"
                             >
                               {sub.label}
                             </Link>
@@ -148,15 +148,15 @@ const Header = () => {
             <li>
               <Link
                 href="/contacts"
-                className="block mt-4 px-4 py-2 text-center bg-zinc-800 text-white rounded-lg"
+                className="block mt-4 px-4 py-2 text-center bg-primary text-primary-foreground rounded-lg hover:opacity-90"
               >
                 Get Started
               </Link>
             </li>
-            <li className="mt-4 text-sm text-gray-600 flex items-center gap-2">
+            <li className="mt-4 text-sm text-secondary flex items-center gap-2">
               <Clock className="w-4 h-4" /> Opening Hours: 10:00 am - 07:00 pm
             </li>
-            <li className="text-sm text-gray-600 flex items-center gap-2">
+            <li className="text-sm text-secondary flex items-center gap-2">
               <MapPin className="w-4 h-4" /> Location: Noida
             </li>
           </ul>

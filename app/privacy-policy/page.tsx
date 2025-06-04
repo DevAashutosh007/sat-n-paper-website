@@ -3,9 +3,10 @@ import React from "react";
 const Page = () => {
   return (
     <div className="p-10 bg-gray-100 text-gray-800 font-sans leading-relaxed">
+      {/* Header updated with primary theme color */}
       <header className="text-center mb-5">
-        <h1 className="text-4xl font-bold m-0">Privacy Policy</h1>
-        <p className="text-base text-gray-600">Last Updated: 04-06-2025</p>
+        <h1 className="text-4xl font-bold m-0 text-primary">Privacy Policy</h1>
+        <p className="text-base text-muted">Last Updated: 04-06-2025</p>
       </header>
 
       <section className="bg-white p-5 rounded-lg shadow-md">
@@ -70,3 +71,5 @@ const Page = () => {
 };
 
 export default Page;
+
+
