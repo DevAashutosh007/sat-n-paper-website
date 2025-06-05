@@ -4,8 +4,8 @@ import React, { useRef, useEffect, useState } from "react";
 import { ChevronDown, ChevronUp } from "lucide-react";
 
 interface AccordionProps {
-  label: string;
-  value: string;
+  label: string | React.ReactNode;
+  value: string | React.ReactNode;
   isOpen?: boolean;
   onToggle?: () => void;
 }

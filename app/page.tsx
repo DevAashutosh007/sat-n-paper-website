@@ -26,7 +26,9 @@ export default function Home() {
         description={`We don't believe in one-size-fits-all solutions. Meet with our team to discover the program that best fits your child's needs and ambitions.`}
         image={<Image src={BannerImage1} alt="Logo" width={500} height={300} />}
         buttonText="Schedule Meet"
+        buttonVariant="primary"
       />
+      
       <StatsCounter />
 
       <BannerSection />

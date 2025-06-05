@@ -3,11 +3,12 @@ import CommonButton from "./CommonButton";
 
 interface CourseBannerProps {
   title: any;
-  subtitle?: string;
-  description: string;
+  subtitle?: any;
+  description: any;
   image: React.ReactNode;
   reverse?: boolean;
-  buttonText?: string;
+  buttonText?: any;
+  buttonVariant?: "primary" | "secondary" | "tertiary";
 }
 
 const CourseBanner: React.FC<CourseBannerProps> = ({
@@ -17,6 +18,7 @@ const CourseBanner: React.FC<CourseBannerProps> = ({
   image,
   reverse = false,
   buttonText = "Get Started",
+  buttonVariant = "secondary",
 }) => {
   return (
     <div className="w-full px-6 py-12">
@@ -26,7 +28,9 @@ const CourseBanner: React.FC<CourseBannerProps> = ({
         } items-center justify-between gap-10 max-w-screen-xl mx-auto`}
       >
         {/* Image */}
-        <div className="w-full lg:w-1/2 flex justify-end">{image}</div>
+        <div className={`w-full lg:w-1/2 flex ${
+          reverse ? "justify-end" : "justify-start"
+        } `}>{image}</div>
 
         {/* Content */}
         <div className="w-full lg:w-1/2 space-y-6">
@@ -42,7 +46,7 @@ const CourseBanner: React.FC<CourseBannerProps> = ({
           <p className="text-base text-muted-foreground font-poppins leading-snug tracking-tight whitespace-pre-line">
             {description}
           </p>
-          <CommonButton variant="secondary">{buttonText}</CommonButton>
+          <CommonButton variant={buttonVariant}>{buttonText}</CommonButton>
         </div>
       </div>
     </div>

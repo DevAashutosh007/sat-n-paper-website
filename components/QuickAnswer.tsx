@@ -6,29 +6,29 @@ import CommonButton from "./CommonButton";
 
 const faqs = [
   {
-    question: "How do I know which program is right for my child?",
+    question: <span className="text-link"> "How do I know which program is right for my child?"</span>,
     answer:
-      "We start with a free consultation to understand your child’s academic goals, learning style, and timeline. Based on that, our team recommends a tailored program that fits their needs — whether it's SAT, ACT, or a focused skill-building track.",
+     <span className="text-counter-label"> "We start with a free consultation to understand your child’s academic goals, learning style, and timeline. Based on that, our team recommends a tailored program that fits their needs — whether it's SAT, ACT, or a focused skill-building track."</span>
   },
   {
-    question: "How personalized is the learning experience?",
+    question: <span className="text-link">How personalized is the learning experience?</span>,
     answer:
-      "We start with a free consultation to understand your child’s academic goals, learning style, and timeline. Based on that, our team recommends a tailored program that fits their needs — whether it's SAT, ACT, or a focused skill-building track.",
+     <span className="text-counter-label">We start with a free consultation to understand your child’s academic goals, learning style, and timeline. Based on that, our team recommends a tailored program that fits their needs — whether it's SAT, ACT, or a focused skill-building track.</span>
   },
   {
-    question: "Are the mentors and tutors experienced?",
+    question: <span className="text-link">Are the mentors and tutors experienced?</span>,
     answer:
-      "We start with a free consultation to understand your child’s academic goals, learning style, and timeline. Based on that, our team recommends a tailored program that fits their needs — whether it's SAT, ACT, or a focused skill-building track.",
+    <span className="text-counter-label">We start with a free consultation to understand your child’s academic goals, learning style, and timeline. Based on that, our team recommends a tailored program that fits their needs — whether it's SAT, ACT, or a focused skill-building track.</span>
   },
   {
-    question: "Can I track my child’s progress?",
+    question: <span className="text-link">Can I track my child’s progress?</span>,
     answer:
-      "We start with a free consultation to understand your child’s academic goals, learning style, and timeline. Based on that, our team recommends a tailored program that fits their needs — whether it's SAT, ACT, or a focused skill-building track.",
+    <span className="text-counter-label">We start with a free consultation to understand your child’s academic goals, learning style, and timeline. Based on that, our team recommends a tailored program that fits their needs — whether it's SAT, ACT, or a focused skill-building track.</span>
   },
   {
-    question: "What resources are available for additional support?",
+    question: <span className="text-link">What resources are available for additional support?</span>,
     answer:
-      "We start with a free consultation to understand your child’s academic goals, learning style, and timeline. Based on that, our team recommends a tailored program that fits their needs — whether it's SAT, ACT, or a focused skill-building track.",
+    <span className="text-counter-label">We start with a free consultation to understand your child’s academic goals, learning style, and timeline. Based on that, our team recommends a tailored program that fits their needs — whether it's SAT, ACT, or a focused skill-building track.</span>
   },
 ];
 
@@ -44,15 +44,15 @@ const QuickAnswer: React.FC = () => {
       {/* Left Section */}
       <div className="w-full lg:max-w-md space-y-5 sm:space-y-6">
         <div className="space-y-2">
-          <h2 className="text-3xl sm:text-5xl font-semibold text-secondary font-poppins leading-snug sm:leading-tight">
+          <h2 className="text-3xl sm:text-5xl font-semibold text-link font-poppins leading-snug sm:leading-tight">
             Quick Answers
           </h2>
-          <p className="text-base sm:text-xl text-muted-foreground font-poppins leading-relaxed tracking-tight">
+          <p className="text-base sm:text-xl text-counter-label font-poppins leading-relaxed tracking-tight">
             We’ve answered the most common ones below. Still unsure? Feel free
             to connect with us — we’re here to help.
           </p>
         </div>
-        <CommonButton variant="secondary">Let's Connect</CommonButton>
+        <CommonButton variant="primary">Let's Connect</CommonButton>
       </div>
 
       {/* Right Section (FAQs) */}
