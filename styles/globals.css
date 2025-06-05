@@ -6,6 +6,9 @@
   /* --color-primary: #2563eb;
   --color-primary-foreground: #ffffff; */
 
+  --color-tooltip: #1f2937; /* gray-900 fallback */
+  --color-tooltip-foreground: #ffffff;
+
   --color-secondary: #64748b;
   --color-secondary-foreground: #ffffff;
 
@@ -24,6 +27,31 @@
   --color-background: #ffffff;
   --color-foreground: #0f172a;
 
+  --color-counter-bg: #f0fdfa; /* Tailwind emerald-50 */
+  --color-counter-border: #60a5fa; /* Tailwind blue-400 */
+  --color-counter-heading: #0f766e; /* Tailwind teal-700 */
+  --color-counter-label: #374151; /* Tailwind gray-700 */
+
+  --color-bg: #ffffff;
+  --color-surface-secondary: #d4d4d8;
+
+  --color-surface-muted: #e5e7eb;
+  --color-surface-muted-dark: #71717a;
+
+  --color-text-muted: #71717a;
+  --color-text-secondary: #737373;
+  --color-text-on-primary: #ffffff;
+
+  --color-outline-muted: #d4d4d8;
+  --color-outline-muted-dark: #71717a;
+
+  /* --color-muted-foreground: #6d6d6d;  */
+
+  --color-muted-light: #f3f4f6; /* Tailwind gray-100 */
+
+  /* Add this if not already present */
+  --color-banner: #d4d4d8; /* Tailwind zinc-300 fallback */
+
   /* Header Link Colors */
   --color-link: #1f2937; /* Default text */
   --color-link-hover: #0d9488; /* On hover */
@@ -32,6 +60,9 @@
   --color-primary: #0d9488; /* CTA bg */
   --color-primary-foreground: #ffffff; /* CTA text */
 
+  --color-performer-name: #1f2937; /* gray-800 */
+  --color-performer-score: #0f766e; /* teal-700 */
+  --color-performer-subtext: #6b7280; /* gray-500 */
 
   /* Font families */
   --font-sans: var(--font-geist-sans, "Poppins", sans-serif);
@@ -76,6 +107,24 @@ body {
 .bg-background {
   background-color: var(--color-background);
 }
+.bg-tooltip {
+  background-color: var(--color-tooltip);
+}
+.text-tooltip-foreground {
+  color: var(--color-tooltip-foreground);
+}
+.bg-banner {
+  background-color: var(--color-banner);
+}
+.bg-counter {
+  background-color: var(--color-counter-bg);
+}
+.bg-dynamic-muted-dark {
+  background-color: var(--color-surface-muted-dark);
+}
+.bg-muted-light {
+  background-color: var(--color-muted-light);
+}
 
 /* Text colors */
 .text-primary {
@@ -117,6 +166,24 @@ body {
 .text-link-hover:hover {
   color: var(--color-link-hover);
 }
+.text-counter-heading {
+  color: var(--color-counter-heading);
+}
+.text-counter-label {
+  color: var(--color-counter-label);
+}
+.text-dynamic-muted {
+  color: var(--color-text-muted);
+}
+.text-performer-name {
+  color: var(--color-performer-name);
+}
+.text-performer-score {
+  color: var(--color-performer-score);
+}
+.text-performer-subtext {
+  color: var(--color-performer-subtext);
+}
 
 /* Border colors */
 .border-primary {
@@ -136,6 +203,9 @@ body {
 }
 .border-border {
   border-color: var(--color-border);
+}
+.border-counter {
+  border-color: var(--color-counter-border);
 }
 
 /* Background hover variants (add more as needed) */

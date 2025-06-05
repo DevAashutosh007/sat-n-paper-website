@@ -1,5 +1,4 @@
 // components/CommonButton.tsx
-
 import React from "react";
 
 type ButtonVariant = "primary" | "secondary" | "tertiary";
@@ -11,8 +10,8 @@ interface CommonButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement
 }
 
 const variantClasses: Record<Exclude<ButtonVariant, "tertiary">, string> = {
-  primary: "bg-blue-600 text-white hover:bg-blue-700",
-  secondary: "bg-zinc-500 text-white hover:bg-zinc-600",
+  primary: "bg-primary text-primary-foreground hover:bg-primary", // Uses CSS variables
+  secondary: "bg-secondary text-secondary-foreground hover:bg-secondary",
 };
 
 const CommonButton: React.FC<CommonButtonProps> = ({
@@ -22,13 +21,20 @@ const CommonButton: React.FC<CommonButtonProps> = ({
   ...props
 }) => {
   if (variant === "tertiary") {
-    const tertiaryClass =
-      "bg-zinc-500 text-[#6D6D6D] border border-[#8A8A8A] px-6 py-3 rounded-xl font-medium font-poppins transition duration-200 ease-in-out";
+    const tertiaryClass = `
+      bg-transparent
+      text-muted-foreground
+      border
+      border-muted
+      px-6 py-3
+      rounded-xl
+      font-medium font-poppins
+      transition duration-200 ease-in-out
+    `;
     return (
       <button
         className={`${tertiaryClass} ${className}`.trim()}
         {...props}
-        style={{ background: "transparent" }}
       >
         {children}
       </button>

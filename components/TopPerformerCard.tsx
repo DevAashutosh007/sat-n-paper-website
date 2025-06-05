@@ -22,8 +22,12 @@ const TopPerformerCard: React.FC<Props> = ({
   height = "h-[400px]",
 }) => {
   return (
-    <div className={`bg-gray-100 rounded-2xl relative p-4 ${width} ${height} flex flex-col`}>
-      <div className="text-2xl font-semibold text-black text-center mb-4">{title}</div>
+    <div
+      className={`bg-muted rounded-2xl relative p-4 ${width} ${height} flex flex-col`}
+    >
+      <div className="text-2xl font-semibold text-foreground text-center mb-4">
+        {title}
+      </div>
       <div className="overflow-y-auto flex-1 space-y-3 pr-1">
         {students.map((student, index) => (
           <TopPerformerRow key={index} {...student} />

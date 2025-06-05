@@ -13,7 +13,7 @@ Comprehensive study material, 18 sectional tests & 18 full mocks
 Test review & discussion classes + Prep Manager support
 Regular online Parent-Tutor Meetings (min. 2)`}
         image={
-          <div className="w-full h-64 bg-zinc-300 opacity-50 rounded-2xl" />
+          <div className="w-full h-64 bg-banner opacity-50 rounded-2xl" />
         }
       />
 
@@ -28,7 +28,7 @@ Comprehensive study material, assignments & test papers
 Test review & discussion classes + Prep Manager support
 Regular online Parent-Tutor Meetings (min. 2)`}
         image={
-          <div className="w-full h-64 bg-zinc-300 opacity-50 rounded-2xl" />
+          <div className="w-full h-64 bg-banner opacity-50 rounded-2xl" />
         }
       />
     </div>

@@ -27,8 +27,8 @@ const TopPerformersSection = () => {
   return (
     <div className="w-full py-12 flex flex-col items-center gap-10">
       <div className="text-center">
-        <h2 className="text-4xl font-semibold text-zinc-700">Our Top Performers</h2>
-        <p className="text-lg text-neutral-500 mt-2">Subtext for result section</p>
+        <h2 className="text-4xl font-semibold text-muted-foreground">Our Top Performers</h2>
+        <p className="text-lg text-secondary mt-2">Subtext for result section</p>
       </div>
 
       <div className="flex flex-wrap justify-center gap-6 px-6 overflow-x-auto">

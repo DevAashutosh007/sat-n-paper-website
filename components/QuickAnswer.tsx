@@ -44,19 +44,15 @@ const QuickAnswer: React.FC = () => {
       {/* Left Section */}
       <div className="w-full lg:max-w-md space-y-5 sm:space-y-6">
         <div className="space-y-2">
-          <h2 className="text-3xl sm:text-5xl font-semibold text-zinc-500 font-poppins leading-snug sm:leading-tight">
+          <h2 className="text-3xl sm:text-5xl font-semibold text-secondary font-poppins leading-snug sm:leading-tight">
             Quick Answers
           </h2>
-          <p className="text-base sm:text-xl text-neutral-500 font-poppins leading-relaxed tracking-tight">
+          <p className="text-base sm:text-xl text-muted-foreground font-poppins leading-relaxed tracking-tight">
             We’ve answered the most common ones below. Still unsure? Feel free
             to connect with us — we’re here to help.
           </p>
         </div>
-              <CommonButton variant="secondary">Let's Connect</CommonButton>
-
-        {/* <button className="px-5 sm:px-6 py-3 bg-zinc-500 rounded-xl text-white text-sm sm:text-base font-medium font-poppins">
-          Let’s Connect
-        </button> */}
+        <CommonButton variant="secondary">Let's Connect</CommonButton>
       </div>
 
       {/* Right Section (FAQs) */}

@@ -1,11 +1,11 @@
 "use client";
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState } from "react";
 
 const stats = [
-  { value: 7500, label: 'Students Trained' },
-  { value: 500, label: 'Tutors & Mentors' },
-  { value: 72, label: 'Countries Served' },
-  { value: 1216, label: 'Students Scored 1500+' },
+  { value: 7500, label: "Students Trained" },
+  { value: 500, label: "Tutors & Mentors" },
+  { value: 72, label: "Countries Served" },
+  { value: 1216, label: "Students Scored 1500+" },
 ];
 
 const StatsCounter = () => {
@@ -54,15 +54,15 @@ const StatsCounter = () => {
   return (
     <div
       ref={sectionRef}
-      className="bg-[#f0fdfa] py-10 border-t border-blue-400"
+      className="bg-counter py-10 border-t border-counter"
     >
       <div className="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
         {stats.map((stat, index) => (
           <div key={stat.label}>
-            <h3 className="text-3xl font-bold text-teal-700">
+            <h3 className="text-3xl font-bold text-counter-heading">
               {counts[index]}+
             </h3>
-            <p className="mt-2 text-gray-700 text-sm">{stat.label}</p>
+            <p className="mt-2 text-counter-label text-sm">{stat.label}</p>
           </div>
         ))}
       </div>

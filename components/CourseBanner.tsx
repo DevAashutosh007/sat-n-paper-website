@@ -28,13 +28,13 @@ const CourseBanner: React.FC<CourseBannerProps> = ({
 
         {/* Content */}
         <div className="w-full lg:w-1/2 space-y-6">
-          <h2 className="text-4xl md:text-5xl font-semibold text-zinc-500 font-poppins leading-tight">
+          <h2 className="text-4xl md:text-5xl font-semibold text-secondary font-poppins leading-tight">
             {title}
           </h2>
-          <p className="text-xl text-neutral-500 font-poppins leading-7 tracking-tight">
+          <p className="text-xl text-muted-foreground font-poppins leading-7 tracking-tight">
             {subtitle}
           </p>
-          <p className="text-base text-neutral-500 font-poppins leading-snug tracking-tight whitespace-pre-line">
+          <p className="text-base text-muted-foreground font-poppins leading-snug tracking-tight whitespace-pre-line">
             {description}
           </p>
           <CommonButton variant="secondary">Get Started</CommonButton>

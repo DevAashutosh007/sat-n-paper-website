@@ -13,7 +13,7 @@ const TabbedResults = () => {
       <div className="mb-6">
         {/* Use custom color class from Tailwind config */}
         <h2 className="text-4xl font-semibold text-primaryHeader">AP Results</h2>  
-        <p className="text-gray-500 text-lg">
+        <p className="text-secondary text-lg">
           Unlock your full potential with our structured SAT program.
         </p>
       </div>
@@ -22,7 +22,7 @@ const TabbedResults = () => {
       <div className="flex flex-col md:flex-row gap-4">
         {/* Tabs */}
         <div className="md:w-1/4 w-full md:sticky md:top-24 z-10">
-          <div className="overflow-y-auto max-h-[300px] md:max-h-[calc(100vh-8rem)] md:h-[calc(100vh-8rem)] border border-gray-200 md:border-r md:rounded-none rounded-lg">
+          <div className="overflow-y-auto max-h-[300px] md:max-h-[calc(100vh-8rem)] md:h-[calc(100vh-8rem)] border border-muted md:border-r md:rounded-none rounded-lg">
             <Tabs
               tabs={Object.keys(apResultsData)}
               activeTab={activeTab}
