@@ -27,9 +27,9 @@ export default function Home() {
         image={<Image src={BannerImage1} alt="Logo" width={500} height={300} />}
         buttonText="Schedule Meet"
       />
+      <StatsCounter />
 
       <BannerSection />
-      <StatsCounter />
       <CourseProgramsPage />
       <QuickAnswer />
       <SATPage />
