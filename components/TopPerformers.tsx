@@ -24,14 +24,14 @@ interface TopPerformersProps {
 const TopPerformers: React.FC<TopPerformersProps> = ({ data }) => {
   return (
     <div className="w-full px-4 py-8 bg-background shadow-md rounded-xl">
-      <h2 className="text-2xl font-semibold text-center mb-6 text-performer-name">
+      <h2 className="text-2xl font-semibold text-center mb-6 text-link">
         Top Performers
       </h2>
 
       {data.map((group, idx) => (
         <div key={idx} className="mb-10">
           <div className="flex items-center justify-between mb-4">
-            <h3 className="text-xl font-medium text-performer-name">{group.title}</h3>
+            <h3 className="text-xl font-medium text-link">{group.title}</h3>
             {group.tooltip && (
               <Tooltip content={group.tooltip}>
                 <Info className="w-5 h-5 text-secondary cursor-pointer" />
@@ -47,7 +47,7 @@ const TopPerformers: React.FC<TopPerformersProps> = ({ data }) => {
               >
                 {/* Left: Name and School */}
                 <div className="w-3/4 flex flex-col gap-1">
-                  <div className="text-base font-medium text-performer-name leading-snug">
+                  <div className="text-base font-medium text-link leading-snug">
                     {student.name}
                   </div>
                   <div className="text-sm text-performer-subtext truncate leading-tight">

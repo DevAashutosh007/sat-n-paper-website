@@ -11,7 +11,7 @@ interface CommonButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement
 
 const variantClasses: Record<Exclude<ButtonVariant, "tertiary">, string> = {
   primary: "bg-primary text-primary-foreground hover:bg-primary", // Uses CSS variables
-  secondary: "bg-secondary text-secondary-foreground hover:bg-secondary",
+  secondary: "bg-secondary text-primary-foreground hover:bg-secondary",
 };
 
 const CommonButton: React.FC<CommonButtonProps> = ({

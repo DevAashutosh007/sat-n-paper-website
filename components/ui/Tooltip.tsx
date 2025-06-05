@@ -38,7 +38,7 @@ const Tooltip: React.FC<TooltipProps> = ({
       {children}
       {isVisible && (
         <div
-  className={`absolute z-50 whitespace-nowrap rounded bg-tooltip px-3 py-1 text-sm text-tooltip-foreground shadow-md transition-opacity duration-200 ${getPositionClasses()}`}
+  className={`absolute z-50 whitespace-nowrap rounded bg-tooltip px-3 py-1 text-sm text-primary-foreground shadow-md transition-opacity duration-200 ${getPositionClasses()}`}
 />
 
       )}

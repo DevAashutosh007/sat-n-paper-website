@@ -4,16 +4,12 @@
 :root {
   /* Brand Colors */
   /* --color-primary: #2563eb;
-  --color-primary-foreground: #ffffff; */
+   */
 
-  --color-tooltip: #1f2937; /* gray-900 fallback */
-  --color-tooltip-foreground: #ffffff;
 
   --color-secondary: #64748b;
-  --color-secondary-foreground: #ffffff;
 
   --color-destructive: #dc2626;
-  --color-destructive-foreground: #ffffff;
 
   --color-muted: #f9fafb;
   --color-muted-foreground: #475569;
@@ -60,7 +56,6 @@
   --color-primary: #0d9488; /* CTA bg */
   --color-primary-foreground: #ffffff; /* CTA text */
 
-  --color-performer-name: #1f2937; /* gray-800 */
   --color-performer-score: #0f766e; /* teal-700 */
   --color-performer-subtext: #6b7280; /* gray-500 */
 
@@ -108,10 +103,7 @@ body {
   background-color: var(--color-background);
 }
 .bg-tooltip {
-  background-color: var(--color-tooltip);
-}
-.text-tooltip-foreground {
-  color: var(--color-tooltip-foreground);
+  background-color: var(--color-link);
 }
 .bg-banner {
   background-color: var(--color-banner);
@@ -131,19 +123,14 @@ body {
   color: var(--color-primary);
 }
 .text-primary-foreground {
-  color: var(--color-primary-foreground) !important;
+  color: var(--color-bg) !important;
 }
 .text-secondary {
   color: var(--color-secondary);
 }
-.text-secondary-foreground {
-  color: var(--color-secondary-foreground);
-}
+
 .text-destructive {
   color: var(--color-destructive);
-}
-.text-destructive-foreground {
-  color: var(--color-destructive-foreground);
 }
 .text-muted {
   color: var(--color-muted);
@@ -174,9 +161,6 @@ body {
 }
 .text-dynamic-muted {
   color: var(--color-text-muted);
-}
-.text-performer-name {
-  color: var(--color-performer-name);
 }
 .text-performer-score {
   color: var(--color-performer-score);
